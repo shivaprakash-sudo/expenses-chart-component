@@ -1,0 +1,45 @@
+// google font
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+// VARIABLES
+// primary colours
+$clr-primary: hsl(10, 79%, 65%);
+$clr-secondary: hsl(186, 34%, 60%);
+
+// neutral colours
+$clr-neutral-100: hsl(33, 100%, 98%);
+$clr-neutral-200: hsl(27, 66%, 92%);
+$clr-neutral-300: hsl(28, 10%, 53%);
+$clr-neutral-400: hsl(25, 47%, 15%);
+
+// typography
+$fs-base: 1.125rem;
+$fs-heading: 1.5rem;
+$ff-primary: "DM Sans", sans-serif;
+$fw-400: 400;
+$fw-700: 700;
+
+*,
+::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+body {
+  font-family: $ff-primary;
+  font-weight: $fw-400;
+
+  .container {
+    min-height: 100vh;
+  }
+}

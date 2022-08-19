@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+*,
+::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+body .container {
+  min-height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-heading {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-light {
+  color: hsl(27deg, 66%, 92%);
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.rounded-md {
+  border-radius: 0.7rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
+}
+
+.rounded-lg {
+  border-radius: 1.1rem;
+  -webkit-border-radius: 1.1rem;
+  -moz-border-radius: 1.1rem;
+  -ms-border-radius: 1.1rem;
+  -o-border-radius: 1.1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */
