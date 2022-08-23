@@ -44,6 +44,10 @@
   background-color: hsl(255, 100%, 100%);
 }
 
+.bg-secondary {
+  background-color: $clr-secondary;
+}
+
 .flex {
   display: flex;
 }

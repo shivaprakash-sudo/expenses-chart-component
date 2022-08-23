@@ -3,8 +3,6 @@ import { barData } from "../data";
 import IBarData from "../interfaces/IBarData";
 
 function ExpensesChart() {
-  const today = new Date().getDay();
-  console.log(today);
   return (
     <article className="chart flex col gap-1">
       <div className="chart__header flex items-center justify-between text-white bg-primary rounded-md resp-padding">
@@ -40,6 +38,8 @@ function ExpensesChart() {
 }
 
 const BarChart: React.FC<IBarData> = ({ barData }) => {
+  const today = new Date().getDay();
+
   const renderBarChart = (): JSX.Element[] => {
     return barData.map((bar, index) => (
       <div
@@ -48,10 +48,22 @@ const BarChart: React.FC<IBarData> = ({ barData }) => {
       >
         <div className="relative bar-container flex col gap-1 justify-center items-center">
           <p className="absolute amount text-sm font-bold">${bar.amount}</p>
-          <div
-            className="bar bg-primary"
-            style={{ height: `${bar.amount * 0.179}rem` }}
-          ></div>
+          {index !== 6 && ++index === today ? (
+            <div
+              className="bar bg-primary bg-secondary"
+              style={{ height: `${bar.amount * 0.179}rem` }}
+            ></div>
+          ) : today === 0 ? (
+            <div
+              className="bar bg-primary bg-secondary"
+              style={{ height: `${bar.amount * 0.179}rem` }}
+            ></div>
+          ) : (
+            <div
+              className="bar bg-primary"
+              style={{ height: `${bar.amount * 0.179}rem` }}
+            ></div>
+          )}
         </div>
         <p className="text-sm">{bar.day}</p>
       </div>
