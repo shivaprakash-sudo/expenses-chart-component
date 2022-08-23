@@ -44,7 +44,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub repo](https://github.com/shivaprakash-sudo/expenses-chart-component)
-- Live Site URL: [Expenses Chart Component](https://your-live-site-url.com)
+- Live Site URL: [Expenses Chart Component](https://shivaprakash-sudo.github.io/expenses-chart-component/)
 
 ## My process
 
