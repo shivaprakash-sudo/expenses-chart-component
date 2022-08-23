@@ -1,4 +1,4 @@
-[
+export const barData = [
   {
     "day": "mon",
     "amount": 17.45

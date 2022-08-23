@@ -1,5 +1,9 @@
 @use "./base" as *;
 
+.outline {
+  outline: 1px solid red;
+}
+
 .text-center {
   text-align: center;
 }
@@ -12,8 +16,32 @@
   font-weight: $fw-700;
 }
 
+.color-neutral-400 {
+  color: $clr-neutral-400;
+}
+
+.text-white {
+  color: hsl(255, 100%, 100%);
+}
+
+.text-black {
+  color: hsl(0, 0%, 0%);
+}
+
 .text-light {
-  color: $clr-neutral-200;
+  color: $clr-neutral-300;
+}
+
+.text-sm {
+  font-size: $fs-small;
+}
+
+.bg-primary {
+  background-color: $clr-primary;
+}
+
+.bg-white {
+  background-color: hsl(255, 100%, 100%);
 }
 
 .flex {
@@ -24,6 +52,10 @@
   gap: 1rem;
 }
 
+.gap-2 {
+  gap: 1.5rem;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -32,12 +64,24 @@
   justify-content: space-between;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .col {
   flex-direction: column;
+}
+
+.mx-auto {
+  margin-inline: auto;
 }
 
 .rounded-md {
@@ -54,4 +98,24 @@
   -moz-border-radius: 1.1rem;
   -ms-border-radius: 1.1rem;
   -o-border-radius: 1.1rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.mb-1 {
+  margin-block-end: 0.2rem;
+}
+
+.mb-2 {
+  margin-block-end: 2rem;
 }

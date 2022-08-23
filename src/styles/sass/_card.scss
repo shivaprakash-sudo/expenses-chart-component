@@ -1,7 +1,98 @@
+@use "./base" as *;
+
+.chart {
+  width: min(90%, 34rem);
+
+  .resp-padding {
+    padding: clamp(1rem, 2vw, 3rem);
+  }
+
+  &__body {
+    padding-block: 1.5rem;
+  }
+
+  &__body h3 {
+    font-size: calc($fs-heading);
+  }
+
+  hr {
+    border: none;
+    border-bottom: 2px solid $clr-neutral-200;
+  }
+
+  .bar-container {
+    .bar {
+      cursor: pointer;
+      width: clamp(2rem, 8vw, 3rem);
+      margin-block-end: 0.5rem;
+      border-radius: 0.3rem;
+      -webkit-border-radius: 0.3rem;
+      -moz-border-radius: 0.3rem;
+      -ms-border-radius: 0.3rem;
+      -o-border-radius: 0.3rem;
+      &:hover {
+        opacity: 60%;
+        transition: 250ms;
+        -webkit-transition: 250ms;
+        -moz-transition: 250ms;
+        -ms-transition: 250ms;
+        -o-transition: 250ms;
+      }
+    }
+
+    .amount {
+      font-size: clamp(0.7rem, $fs-small, 1.1rem);
+      visibility: hidden;
+      padding: clamp(0.3rem, 1.5vw, 0.6rem);
+      background-color: $clr-neutral-400;
+      color: $clr-neutral-100;
+      top: -2.5rem;
+      z-index: 1;
+      margin-block-end: 1rem;
+      border-radius: 0.3rem;
+      -webkit-border-radius: 0.3rem;
+      -moz-border-radius: 0.3rem;
+      -ms-border-radius: 0.3rem;
+      -o-border-radius: 0.3rem;
+    }
+  }
+
+  .bar-container:hover {
+    .amount {
+      visibility: visible;
+      transition: scale 200ms ease-in-out;
+      -webkit-transition: scale 200ms ease-in-out;
+      -moz-transition: scale 200ms ease-in-out;
+      -ms-transition: scale 200ms ease-in-out;
+      -o-transition: scale 200ms ease-in-out;
+    }
+  }
+}
+
+.icon {
+  width: 3rem;
+  aspect-ratio: 1;
+}
+
 .attribution {
-  font-size: 11px;
+  margin-top: 1rem;
+  font-size: 0.75rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: $clr-secondary;
+}
+
+@media (min-width: 600px) {
+  $fs-base: 1.2rem;
+  body {
+    font-size: $fs-base;
+  }
+  .bar {
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
 }

@@ -20,7 +20,12 @@ body {
   font-weight: 400;
 }
 body .container {
+  background-color: hsl(10deg, 79%, 95%);
   min-height: 100vh;
+}
+
+.outline {
+  outline: 1px solid red;
 }
 
 .text-center {
@@ -28,15 +33,39 @@ body .container {
 }
 
 .font-heading {
-  font-size: 1.5rem;
+  font-size: 1.6875rem;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
+.color-neutral-400 {
+  color: hsl(25deg, 47%, 15%);
+}
+
+.text-white {
+  color: hsl(255deg, 100%, 100%);
+}
+
+.text-black {
+  color: hsl(0deg, 0%, 0%);
+}
+
 .text-light {
-  color: hsl(27deg, 66%, 92%);
+  color: hsl(28deg, 10%, 53%);
+}
+
+.text-sm {
+  font-size: 0.9140625rem;
+}
+
+.bg-primary {
+  background-color: hsl(10deg, 79%, 65%);
+}
+
+.bg-white {
+  background-color: hsl(255deg, 100%, 100%);
 }
 
 .flex {
@@ -47,6 +76,10 @@ body .container {
   gap: 1rem;
 }
 
+.gap-2 {
+  gap: 1.5rem;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -55,12 +88,24 @@ body .container {
   justify-content: space-between;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .col {
   flex-direction: column;
+}
+
+.mx-auto {
+  margin-inline: auto;
 }
 
 .rounded-md {
@@ -79,13 +124,110 @@ body .container {
   -o-border-radius: 1.1rem;
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.mb-1 {
+  margin-block-end: 0.2rem;
+}
+
+.mb-2 {
+  margin-block-end: 2rem;
+}
+
+.chart {
+  width: min(90%, 34rem);
+}
+.chart .resp-padding {
+  padding: clamp(1rem, 2vw, 3rem);
+}
+.chart__body {
+  padding-block: 1.5rem;
+}
+.chart__body h3 {
+  font-size: 1.6875rem;
+}
+.chart hr {
+  border: none;
+  border-bottom: 2px solid hsl(27deg, 66%, 92%);
+}
+.chart .bar-container .bar {
+  cursor: pointer;
+  width: clamp(2rem, 8vw, 3rem);
+  margin-block-end: 0.5rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+.chart .bar-container .bar:hover {
+  opacity: 60%;
+  transition: 250ms;
+  -webkit-transition: 250ms;
+  -moz-transition: 250ms;
+  -ms-transition: 250ms;
+  -o-transition: 250ms;
+}
+.chart .bar-container .amount {
+  font-size: 0.9140625rem;
+  visibility: hidden;
+  padding: clamp(0.3rem, 1.5vw, 0.6rem);
+  background-color: hsl(25deg, 47%, 15%);
+  color: hsl(33deg, 100%, 98%);
+  top: -2.5rem;
+  z-index: 1;
+  margin-block-end: 1rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+.chart .bar-container:hover .amount {
+  visibility: visible;
+  transition: scale 200ms ease-in-out;
+  -webkit-transition: scale 200ms ease-in-out;
+  -moz-transition: scale 200ms ease-in-out;
+  -ms-transition: scale 200ms ease-in-out;
+  -o-transition: scale 200ms ease-in-out;
+}
+
+.icon {
+  width: 3rem;
+  aspect-ratio: 1;
+}
+
 .attribution {
-  font-size: 11px;
+  margin-top: 1rem;
+  font-size: 0.75rem;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(186deg, 34%, 60%);
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 1.2rem;
+  }
+  .bar {
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

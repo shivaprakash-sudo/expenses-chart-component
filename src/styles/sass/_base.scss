@@ -4,6 +4,7 @@
 // VARIABLES
 // primary colours
 $clr-primary: hsl(10, 79%, 65%);
+$clr-primary-light: hsl(10, 79%, 95%);
 $clr-secondary: hsl(186, 34%, 60%);
 
 // neutral colours
@@ -14,7 +15,8 @@ $clr-neutral-400: hsl(25, 47%, 15%);
 
 // typography
 $fs-base: 1.125rem;
-$fs-heading: 1.5rem;
+$fs-small: calc($fs-base * 0.8125);
+$fs-heading: calc($fs-base * 1.5);
 $ff-primary: "DM Sans", sans-serif;
 $fw-400: 400;
 $fw-700: 700;
@@ -36,10 +38,12 @@ button {
 }
 
 body {
+  // font-size: clamp(0.9rem, $fs-small, $fs-heading);
   font-family: $ff-primary;
   font-weight: $fw-400;
 
   .container {
+    background-color: $clr-primary-light;
     min-height: 100vh;
   }
 }
